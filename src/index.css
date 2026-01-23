@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0B2B4A;
+  --color-primary-light: #1B4B7A;
+  --color-primary-dark: #051B30;
+  
+  --color-accent: #D4A017;
+  --color-accent-light: #F4C037;
+  --color-accent-dark: #B48007;
+
+  --color-neutral-light: #F7F9FB;
+  --color-neutral-gray: #E5E7EB;
+  --color-neutral-dark: #1F2937;
+
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: Merriweather, serif;
+}
+
+@layer utilities {
+  .btn-primary {
+    @apply bg-accent hover:bg-accent-light text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-white hover:text-primary;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border-2 border-primary text-primary font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-primary hover:text-white;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-800 bg-white antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold text-primary;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl text-primary leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl text-primary mb-4;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl text-primary mb-3;
+  }
+}

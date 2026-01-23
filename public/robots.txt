@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://agrimeducation.com/sitemap.xml
