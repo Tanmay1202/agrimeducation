@@ -4,7 +4,7 @@ import LeadForm from '../components/common/LeadForm';
 import SEO from '../components/common/SEO';
 import Button from '../components/common/Button';
 import { Check, ArrowRight, Star, Globe, Shield, GraduationCap, MapPin, Phone, Users } from 'lucide-react';
-import { CONTACT_INFO, TEAM_MEMBERS } from '../constants';
+import { CONTACT_INFO } from '../constants';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
