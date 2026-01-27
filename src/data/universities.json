@@ -1,0 +1,565 @@
+[
+    {
+        "id": "perm-state-medical-university",
+        "name": "Perm State Medical University",
+        "location": "Perm City",
+        "country": "Russia",
+        "established": 1916,
+        "courses": [
+            "MBBS",
+            "Pediatrics",
+            "Dentistry"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$5,500 / year",
+            "hostel": "Included",
+            "mess": "$1,200 / year",
+            "total_package": "$30,900"
+        },
+        "image": "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=800",
+        "highlights": [
+            "Oldest & Largest in Ural region",
+            "NMC & WHO recognized",
+            "High FMGE passing rate",
+            "Modern simulation centers"
+        ],
+        "details": {
+            "eligibility": "Min 50% in PCB, NEET Qualified",
+            "admission_process": "Registration -> Document Submission -> Offer Letter -> Visa -> Departure",
+            "documents": [
+                "10th/12th Marksheet",
+                "Passport",
+                "NEET Scorecard",
+                "Birth Certificate"
+            ]
+        }
+    },
+    {
+        "id": "mari-state-medical-university",
+        "name": "Mari State Medical University",
+        "location": "Yoshkar-Ola",
+        "country": "Russia",
+        "established": 1972,
+        "courses": [
+            "General Medicine",
+            "Pediatrics",
+            "Dentistry"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$6,000 (1st Yr), $5,000 (Subsequent)",
+            "hostel": "Included",
+            "mess": "$1,500 (1st Yr)",
+            "total_package": "$32,500"
+        },
+        "image": "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=800",
+        "highlights": [
+            "Top-ranked university in Russia",
+            "1,100,000+ books in library",
+            "Clinical training in 20+ hospitals",
+            "Strong Indian student community"
+        ],
+        "details": {
+            "eligibility": "12th with 50% PCB, NEET Qualification",
+            "admission_process": "Direct admission based on merit and NEET",
+            "documents": [
+                "Academic Transcripts",
+                "Passport",
+                "Photos",
+                "Medical Fitness Certificate"
+            ]
+        }
+    },
+    {
+        "id": "tver-state-medical-university",
+        "name": "Tver State Medical University",
+        "location": "Tver",
+        "country": "Russia",
+        "established": 1936,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "3,00,000 Rubles / year",
+            "hostel": "20,000 Rubles / year",
+            "insurance": "6,000 Rubles / year",
+            "total": "3,26,000 Rubles / year"
+        },
+        "image": "https://images.unsplash.com/photo-1523050853051-be991f85a6ad?q=80&w=800",
+        "highlights": [
+            "One of the oldest medical schools in Russia",
+            "UNESCO & WHO recognition",
+            "High clinical exposure",
+            "Proximity to Moscow"
+        ]
+    },
+    {
+        "id": "orenburg-state-medical-university",
+        "name": "Orenburg State Medical University",
+        "location": "Orenburg",
+        "country": "Russia",
+        "established": 1944,
+        "courses": [
+            "General Medicine",
+            "Pediatrics",
+            "Dentistry"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$6,000 / year",
+            "hostel": "Included",
+            "mess": "$1,500 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?q=80&w=800",
+        "highlights": [
+            "1200+ Indian students currently",
+            "State-of-the-art museums & labs",
+            "Graduates practicing in USA, UK, India",
+            "Government-funded institution"
+        ]
+    },
+    {
+        "id": "altai-state-medical-university",
+        "name": "Altai State Medical University",
+        "location": "Barnaul",
+        "country": "Russia",
+        "established": 1954,
+        "courses": [
+            "General Medicine",
+            "Pediatrics",
+            "Pharmacy"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "323,600 Rubles / year",
+            "hostel": "36,000 Rubles / year",
+            "insurance": "14,000 Rubles / year"
+        },
+        "image": "https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?q=80&w=800",
+        "highlights": [
+            "Located in scenic Altai region",
+            "Modern diagnostic & prevention techs",
+            "Affordable cost of living",
+            "NMC & WHO approved"
+        ]
+    },
+    {
+        "id": "pskov-state-medical-university",
+        "name": "Pskov State Medical University",
+        "location": "Pskov",
+        "country": "Russia",
+        "established": 2010,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "₹ 2,50,000 / year",
+            "hostel": "Included",
+            "total_package": "₹ 12,00,000 (Academic Total)"
+        },
+        "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800",
+        "highlights": [
+            "Modern campus built in 2010",
+            "Low teacher-student ratio",
+            "Bilingual instruction (Russian support)",
+            "Vibrant student life"
+        ]
+    },
+    {
+        "id": "ulyanovsk-state-medical-university",
+        "name": "Ulyanovsk State Medical University",
+        "location": "Ulyanovsk",
+        "country": "Russia",
+        "established": 1988,
+        "courses": [
+            "General Medicine"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "Affordable (Under $4,000)",
+            "hostel": "Separate buildings for boys/girls"
+        },
+        "image": "https://images.unsplash.com/photo-1525921429573-056ba4706917?q=80&w=800",
+        "highlights": [
+            "Top-tier medical infrastructure",
+            "Scientific laboratories & library",
+            "International global opportunities",
+            "Calm & safe academic environment"
+        ]
+    },
+    {
+        "id": "ural-state-medical-university",
+        "name": "Ural State Medical University",
+        "location": "Yekaterinburg",
+        "country": "Russia",
+        "established": 1930,
+        "courses": [
+            "General Medicine",
+            "Dentistry",
+            "Pharmacy"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "₹ 2,34,000 / year",
+            "hostel": "₹ 10,800 / year",
+            "insurance": "₹ 5,000 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1576091160550-217359f42af1?q=80&w=800",
+        "highlights": [
+            "Center of medical education in Urals",
+            "Rich 90-year history",
+            "High clinical and research focus",
+            "Yekaterinburg is a major tech hub"
+        ]
+    },
+    {
+        "id": "kirov-state-medical-university",
+        "name": "Kirov State Medical University",
+        "location": "Kirov",
+        "country": "Russia",
+        "established": 1987,
+        "courses": [
+            "General Medicine"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "2,70,000 Rubles / year",
+            "hostel": "60,000 Rubles / year",
+            "total_in_inr": "₹ 3,00,000 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?q=80&w=800",
+        "highlights": [
+            "44 specialized medicine departments",
+            "Clinic with 20 diagnostic establishments",
+            "Growing rapidly as a leading institute",
+            "Direct government financing"
+        ]
+    },
+    {
+        "id": "siberian-state-medical-university",
+        "name": "Siberian State Medical University",
+        "location": "Tomsk",
+        "country": "Russia",
+        "established": 1878,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$6,150 (1st Yr), $5,150 (Subsequent)",
+            "hostel": "Included",
+            "mess": "$1,200 (1st Yr)"
+        },
+        "image": "https://images.unsplash.com/photo-1498243639352-085023908208?q=80&w=800",
+        "highlights": [
+            "Status of Flagship Medical University",
+            "One of the oldest in Asian Russia",
+            "High-tech research facilities",
+            "Scientific clinical laboratories"
+        ]
+    },
+    {
+        "id": "kemerovo-state-medical-university",
+        "name": "Kemerovo State Medical University",
+        "location": "Kemerovo",
+        "country": "Russia",
+        "established": 1955,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "2,95,000 Rubles / year",
+            "hostel": "50,000 - 70,000 Rubles / year"
+        },
+        "image": "https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=800",
+        "highlights": [
+            "Budget-friendly tuition fees",
+            "Managed cost of living",
+            "English medium throughout 6 years",
+            "Safe and peaceful city environment"
+        ]
+    },
+    {
+        "id": "samarkand-state-medical-institute",
+        "name": "Samarkand State Medical Institute",
+        "location": "Samarkand",
+        "country": "Uzbekistan",
+        "established": 1930,
+        "courses": [
+            "Medical Science",
+            "Dentistry",
+            "Surgery"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$3,500 / year",
+            "hostel": "$350 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=800",
+        "highlights": [
+            "Oldest & Most Prestigious in Uzbekistan",
+            "Multimedia & VR-integrated learning",
+            "UNESCO & WHO Recognized",
+            "Strong historical legacy"
+        ]
+    },
+    {
+        "id": "bukhara-state-medical-institute",
+        "name": "Bukhara State Medical Institute",
+        "location": "Bukhara",
+        "country": "Uzbekistan",
+        "established": 1990,
+        "courses": [
+            "Medical Science"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$3,200 / year",
+            "hostel": "$500 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=800",
+        "highlights": [
+            "Named after Abu Ali ibn Sina",
+            "Modern clinical infrastructure",
+            "Historic city location",
+            "Low tuition for Indian students"
+        ]
+    },
+    {
+        "id": "tashkent-medical-academy",
+        "name": "Tashkent Medical Academy",
+        "location": "Tashkent",
+        "country": "Uzbekistan",
+        "established": 2005,
+        "courses": [
+            "Medicine",
+            "Pediatrics",
+            "Nursing"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$3,400 / year",
+            "hostel": "$450 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1519452635265-7b1fbfd865c3?q=80&w=800",
+        "highlights": [
+            "Capital city location",
+            "National status academy",
+            "Broad international collaborations",
+            "Modern research center"
+        ]
+    },
+    {
+        "id": "kazakh-national-medical-university",
+        "name": "Kazakh National Medical University",
+        "location": "Almaty",
+        "country": "Kazakhstan",
+        "established": 1930,
+        "courses": [
+            "General Medicine",
+            "Pediatrics",
+            "Pharmacy"
+        ],
+        "duration": "5-6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$5,000 / year",
+            "hostel": "$300 / year",
+            "admission": "$1,000 (1st Yr Only)"
+        },
+        "image": "https://images.unsplash.com/photo-1564981797816-1043664bf78d?q=80&w=800",
+        "highlights": [
+            "National University status",
+            "1,500+ Expert faculty members",
+            "Located in socio-cultural hub Almaty",
+            "Over 11,000 students enrolled"
+        ]
+    },
+    {
+        "id": "karaganda-state-medical-university",
+        "name": "Karaganda State Medical University",
+        "location": "Karaganda",
+        "country": "Kazakhstan",
+        "established": 1950,
+        "courses": [
+            "MBBS",
+            "Gynecology",
+            "Neurology"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$4,200 / year",
+            "hostel": "$600 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+        "highlights": [
+            "First medical university in Kazakhstan",
+            "ISO 9001-2000 certified management",
+            "Multi-level professional training",
+            "8000+ students from 40+ countries"
+        ]
+    },
+    {
+        "id": "south-kazakhstan-medical-academy",
+        "name": "South Kazakhstan Medical Academy",
+        "location": "Shymkent",
+        "country": "Kazakhstan",
+        "established": 1979,
+        "courses": [
+            "MBBS",
+            "Pharmacy",
+            "Stomatology"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$4,200 / year",
+            "hostel": "$700 / year",
+            "total_package": "~$20,000 (Total)"
+        },
+        "image": "https://images.unsplash.com/photo-1574950578143-858c6fc58922?q=80&w=800",
+        "highlights": [
+            "Affordable Shymkent location",
+            "Listed in WDOMS & WHO",
+            "Indian food available in mess",
+            "Simulation centers for clinical training"
+        ]
+    },
+    {
+        "id": "tbilisi-state-medical-university",
+        "name": "Tbilisi State Medical University",
+        "location": "Tbilisi",
+        "country": "Georgia",
+        "established": 1918,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$8,000 / year",
+            "hostel": "$2,500 / year (inc. Mess)",
+            "hostel_mess": "$2,500 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1541829070764-84a7d30dee9d?q=80&w=800",
+        "highlights": [
+            "Oldest university in Georgia",
+            "Global ranking & recognition",
+            "25% international student body",
+            "Located in capital Tbilisi"
+        ]
+    },
+    {
+        "id": "alte-university-georgia",
+        "name": "Alte University School of Medicine",
+        "location": "Tbilisi",
+        "country": "Georgia",
+        "established": 2002,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$5,500 / year",
+            "hostel": "$1,500 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=800",
+        "highlights": [
+            "New modern campus in city center",
+            "15:1 Student-Teacher ratio",
+            "WFME & NMC recognition",
+            "Tech-integrated teaching labs"
+        ]
+    },
+    {
+        "id": "east-west-university-georgia",
+        "name": "East West University",
+        "location": "Tbilisi",
+        "country": "Georgia",
+        "established": 1996,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$5,500 / year",
+            "hostel": "$1,500 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800",
+        "highlights": [
+            "Budget-friendly Georgian education",
+            "Trans-continental recognized degree",
+            "Focus on clinical practice",
+            "Secured hostel facilities"
+        ]
+    },
+    {
+        "id": "caucasus-international-university",
+        "name": "Caucasus International University",
+        "location": "Tbilisi",
+        "country": "Georgia",
+        "established": 1998,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$5,000 / year",
+            "hostel": "$1,200 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800",
+        "highlights": [
+            "Accredited Higher Education Institute",
+            "CEEMAN Quality Accreditation",
+            "Extensive student participation programs",
+            "Capital city exposure"
+        ]
+    },
+    {
+        "id": "international-medical-university-kyrgyzstan",
+        "name": "International Medical University (IMU)",
+        "location": "Bishkek",
+        "country": "Kyrgyzstan",
+        "established": 2016,
+        "courses": [
+            "General Medicine",
+            "Dentistry"
+        ],
+        "duration": "6 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "$4,000 / year",
+            "hostel": "$800 / year",
+            "visa_insurance": "$400 / year"
+        },
+        "image": "https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?q=80&w=800",
+        "highlights": [
+            "SAPATTUU BILIM Internationally Accredited",
+            "Visionary research-driven campus",
+            "Located in Bishkek capital",
+            "English medium throughout"
+        ]
+    }
+]
