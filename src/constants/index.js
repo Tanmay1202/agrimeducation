@@ -19,11 +19,12 @@ export const NAV_LINKS = [
         name: 'Services',
         path: '/services',
         subItems: [
-            { name: 'MBBS Abroad', path: '/services/mbbs-abroad' },
-            { name: 'MBBS India', path: '/services/mbbs-india' },
-            { name: 'FMGE/NExT Coaching', path: '/services/fmge-next-coaching' },
-            { name: 'Visa & Pre-departure', path: '/services/visa-predeparture' },
-            { name: 'On-arrival Support', path: '/services/on-arrival' },
+            { name: 'Admission Assistance', path: '/services/admission-assistance' },
+            { name: 'Guidance & Counseling', path: '/services/guidance-counseling' },
+            { name: 'University Selection', path: '/services/university-selection' },
+            { name: 'Pre-Departure Guidance', path: '/services/pre-departure-guidance' },
+            { name: 'On-Arrival Benefits', path: '/services/on-arrival-benefits' },
+            { name: 'FMGE/NEXT Coaching', path: '/services/fmge-next-coaching' },
         ]
     },
     { name: 'Universities', path: '/universities' },

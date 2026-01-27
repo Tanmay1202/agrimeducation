@@ -181,12 +181,12 @@ const Home = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { title: 'MBBS Abroad', desc: 'Direct admission in top govt universities in Russia, Uzbekistan, Kazakhstan & more. Low cost, English medium.', link: '/services/mbbs-abroad' },
-                            { title: 'MBBS in India', desc: 'Guidance for deemed universities and private colleges in India. Budget planning and counseling.', link: '/services/mbbs-india' },
-                            { title: 'Visa Assistance', desc: '100% Visa success rate. We handle documentation, apostille, and embassy interviews.', link: '/services/visa-predeparture' },
-                            { title: 'FMGE/NExT Coaching', desc: 'Start preparing for your licensure exam from 1st year with our coaching partners.', link: '/services/fmge-next-coaching' },
-                            { title: 'Pre-Departure', desc: 'Travel arrangements, forex assistance, and student networking before you fly.', link: '/services/visa-predeparture' },
-                            { title: 'On-Arrival Support', desc: 'Airport pickup, hostel allotment, sim card, and local bank account setup.', link: '/services/on-arrival' },
+                            { title: 'Admission Assistance', desc: '100% support for university applications, document verification, and securing admission.', link: '/services/admission-assistance' },
+                            { title: 'Guidance & Counseling', desc: 'One-on-one counseling to help students navigate the admission process and make informed decisions.', link: '/services/guidance-counseling' },
+                            { title: 'University Selection', desc: 'Guidance in selecting the best medical universities based on accreditation, faculty, and affordability.', link: '/services/university-selection' },
+                            { title: 'Pre-Departure Guidance', desc: 'Travel and settlement guidance, safety tips, and documentation support before you fly.', link: '/services/pre-departure-guidance' },
+                            { title: 'On-Arrival Benefits', desc: 'Airport pickup, accommodation, SIM card, and orientation sessions in the new country.', link: '/services/on-arrival-benefits' },
+                            { title: 'FMGE/NExT Coaching', desc: 'Expert faculty and structured study plans to help you clear licensing exams with ease.', link: '/services/fmge-next-coaching' },
                         ].map((service, idx) => (
                             <Link key={idx} to={service.link} className="group bg-neutral-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary/20">
                                 <div className="w-14 h-14 bg-white rounded-lg shadow-sm flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
@@ -264,7 +264,7 @@ const Home = () => {
                             </Link>
                         ))}
                         <span className="text-gray-400 px-2 self-center">|</span>
-                        <Link to="/services/mbbs-abroad" className="text-primary hover:underline">MBBS Abroad Consultants</Link>
+                        <Link to="/services/admission-assistance" className="text-primary hover:underline">MBBS Abroad Consultants</Link>
                     </div>
                 </div>
             </section>

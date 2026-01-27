@@ -52,11 +52,11 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-bold mb-6 text-white border-b-2 border-accent inline-block pb-2">Our Services</h3>
                         <ul className="space-y-3">
-                            <li><Link to="/services/mbbs-abroad" className="text-gray-400 hover:text-accent transition-colors">MBBS in Russia</Link></li>
-                            <li><Link to="/services/mbbs-abroad" className="text-gray-400 hover:text-accent transition-colors">MBBS in Uzbekistan</Link></li>
-                            <li><Link to="/services/mbbs-abroad" className="text-gray-400 hover:text-accent transition-colors">MBBS in Kazakhstan</Link></li>
-                            <li><Link to="/services/mbbs-india" className="text-gray-400 hover:text-accent transition-colors">MBBS in India</Link></li>
-                            <li><Link to="/services/fmge-next-coaching" className="text-gray-400 hover:text-accent transition-colors">FMGE/NExT Coaching</Link></li>
+                            <li><Link to="/services/admission-assistance" className="text-gray-400 hover:text-accent transition-colors">100% Admission Assistance</Link></li>
+                            <li><Link to="/services/guidance-counseling" className="text-gray-400 hover:text-accent transition-colors">Personalized Guidance</Link></li>
+                            <li><Link to="/services/university-selection" className="text-gray-400 hover:text-accent transition-colors">University Selection</Link></li>
+                            <li><Link to="/services/pre-departure-guidance" className="text-gray-400 hover:text-accent transition-colors">Pre-Departure Guidance</Link></li>
+                            <li><Link to="/services/fmge-next-coaching" className="text-gray-400 hover:text-accent transition-colors">FMGE/NEXT Coaching</Link></li>
                         </ul>
                     </div>
 
