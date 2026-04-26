@@ -32,6 +32,7 @@ export const NAV_LINKS = [
         ]
     },
     { name: 'Universities', path: '/universities' },
+    { name: 'Campus Tours', path: '/campus-tours' },
     { name: 'Contact', path: '/contact' },
 ];
 

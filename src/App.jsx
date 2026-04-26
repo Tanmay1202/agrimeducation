@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Universities from './pages/Universities';
 import Contact from './pages/Contact';
+import CampusTours from './pages/CampusTours';
 import Privacy, { Terms } from './pages/Legal';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="universities" element={<Universities />} />
         <Route path="universities/:slug" element={<Universities />} /> {/* Reuse for now */}
         <Route path="contact" element={<Contact />} />
+        <Route path="campus-tours" element={<CampusTours />} />
         <Route path="privacy" element={<Privacy />} />
         <Route path="terms" element={<Terms />} />
 

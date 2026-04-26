@@ -67,7 +67,9 @@
             "Growing infrastructure",
             "NMC recognized",
             "Accessible from UP border"
-        ]
+        ],
+        "youtube_url": "https://www.youtube.com/watch?v=5z7zdvKL7N8",
+        "embed_id": "5z7zdvKL7N8"
     },
     {
         "id": "kist-medical-college",
@@ -116,7 +118,9 @@
             "Large teaching hospital",
             "NMC & WHO recognized",
             "Excellent clinical exposure"
-        ]
+        ],
+        "youtube_url": "https://www.youtube.com/watch?v=SBrPhoYAUEE",
+        "embed_id": "SBrPhoYAUEE"
     },
     {
         "id": "nobel-medical-college",
@@ -192,6 +196,8 @@
             "High FMGE passing rate",
             "Modern simulation centers"
         ],
+        "youtube_url": "https://www.youtube.com/watch?v=JaHQ4ZNNWFo",
+        "embed_id": "JaHQ4ZNNWFo",
         "details": {
             "eligibility": "Min 50% in PCB, NEET Qualified",
             "admission_process": "Registration -> Document Submission -> Offer Letter -> Visa -> Departure",
@@ -315,7 +321,9 @@
             "Modern diagnostic & prevention techs",
             "Affordable cost of living",
             "NMC & WHO approved"
-        ]
+        ],
+        "youtube_url": "https://m.youtube.com/watch?v=fGye34bY2ak",
+        "embed_id": "fGye34bY2ak"
     },
     {
         "id": "pskov-state-medical-university",
@@ -412,7 +420,9 @@
             "Clinic with 20 diagnostic establishments",
             "Growing rapidly as a leading institute",
             "Direct government financing"
-        ]
+        ],
+        "youtube_url": "https://www.youtube.com/watch?v=lULrfr-Ifmo",
+        "embed_id": "lULrfr-Ifmo"
     },
     {
         "id": "siberian-state-medical-university",
@@ -436,7 +446,9 @@
             "One of the oldest in Asian Russia",
             "High-tech research facilities",
             "Scientific clinical laboratories"
-        ]
+        ],
+        "youtube_url": "https://m.youtube.com/watch?v=oMYt3H_H9dY",
+        "embed_id": "oMYt3H_H9dY"
     },
     {
         "id": "kemerovo-state-medical-university",
@@ -484,7 +496,9 @@
             "Multimedia & VR-integrated learning",
             "UNESCO & WHO Recognized",
             "Strong historical legacy"
-        ]
+        ],
+        "youtube_url": "https://m.youtube.com/watch?v=EBWCWHkGxpk",
+        "embed_id": "EBWCWHkGxpk"
     },
     {
         "id": "bukhara-state-medical-institute",
@@ -532,7 +546,9 @@
             "National status academy",
             "Broad international collaborations",
             "Modern research center"
-        ]
+        ],
+        "youtube_url": "https://www.youtube.com/watch?v=yj3DjK5DTjs",
+        "embed_id": "yj3DjK5DTjs"
     },
     {
         "id": "kazakh-national-medical-university",
@@ -633,7 +649,9 @@
             "Global ranking & recognition",
             "25% international student body",
             "Located in capital Tbilisi"
-        ]
+        ],
+        "youtube_url": "https://www.youtube.com/watch?v=Ym4g-ahOXE8",
+        "embed_id": "Ym4g-ahOXE8"
     },
     {
         "id": "alte-university-georgia",
@@ -656,7 +674,9 @@
             "15:1 Student-Teacher ratio",
             "WFME & NMC recognition",
             "Tech-integrated teaching labs"
-        ]
+        ],
+        "youtube_url": "https://www.youtube.com/watch?v=HxReR_iwveo",
+        "embed_id": "HxReR_iwveo"
     },
     {
         "id": "east-west-university-georgia",
@@ -727,6 +747,8 @@
             "Visionary research-driven campus",
             "Located in Bishkek capital",
             "English medium throughout"
-        ]
+        ],
+        "youtube_url": "https://www.youtube.com/watch?v=MvGOXaOEa7o",
+        "embed_id": "MvGOXaOEa7o"
     }
 ]
