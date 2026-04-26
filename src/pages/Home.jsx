@@ -268,17 +268,17 @@ const Home = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { title: 'Altai State Medical University', desc: 'Hostel & Campus Overview', vimeoId: '76979871' },
-                            { title: 'Tashkent Medical Academy', desc: 'Clinical Labs Tour', vimeoId: '76979871' },
-                            { title: 'Ural State Medical University', desc: 'Library & Student Life', vimeoId: '76979871' },
+                            { title: 'Altai State Medical University', desc: 'Hostel & Campus Overview', youtubeId: 'jNQXAC9IVRw' },
+                            { title: 'Tashkent Medical Academy', desc: 'Clinical Labs Tour', youtubeId: 'jNQXAC9IVRw' },
+                            { title: 'Ural State Medical University', desc: 'Library & Student Life', youtubeId: 'jNQXAC9IVRw' },
                         ].map((tour, idx) => (
                             <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
                                 <div className="relative pt-[56.25%] bg-gray-100">
                                     <iframe 
-                                        src={`https://player.vimeo.com/video/${tour.vimeoId}?title=0&byline=0&portrait=0`} 
+                                        src={`https://www.youtube.com/embed/${tour.youtubeId}?rel=0&modestbranding=1`} 
                                         className="absolute top-0 left-0 w-full h-full"
                                         frameBorder="0" 
-                                        allow="autoplay; fullscreen; picture-in-picture" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                         allowFullScreen
                                         title={tour.title}
                                     ></iframe>
