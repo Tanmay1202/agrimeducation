@@ -1,14 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, GraduationCap, CheckCircle, Info, DollarSign } from 'lucide-react';
+import { MapPin, Calendar, GraduationCap, CheckCircle, Info, DollarSign, MessageCircle } from 'lucide-react';
 import { cn } from '../../utils/cn';
+import { CONTACT_INFO } from '../../constants';
 
 const UniversityCard = ({ university, onKnowMore }) => {
     // Dynamically resolve local image if it exists, otherwise use the URL in the data
     const getThumbnail = () => {
         // Map of IDs to their specific filenames/extensions if not [id].webp
         const localOverrides = {
-            'siberian-state-medical-university': 'siberian-state-university.jpeg'
+            'siberian-state-medical-university': 'siberian-state-university.jpeg',
+            'nepal-manipal-medical-college': 'manipal-college-of-medical-sciences.webp',
+            'kathmandu-medical-college': 'kathmandu-medical-college-nepal.webp'
         };
 
         const localImages = [
@@ -19,7 +22,9 @@ const UniversityCard = ({ university, onKnowMore }) => {
             'pskov-state-medical-university', 'samarkand-state-medical-institute', 'south-kazakhstan-medical-academy',
             'tashkent-medical-academy', 'tbilisi-state-medical-university', 'tver-state-medical-university',
             'ulyanovsk-state-medical-university', 'ural-state-medical-university',
-            'siberian-state-medical-university'
+            'siberian-state-medical-university',
+            'lumbini-medical-college', 'nepal-manipal-medical-college', 'devdaha-medical-college',
+            'kist-medical-college', 'chitwan-medical-college', 'nobel-medical-college', 'kathmandu-medical-college'
         ];
 
         if (localImages.includes(university.id)) {
@@ -96,40 +101,25 @@ const UniversityCard = ({ university, onKnowMore }) => {
                     </div>
                 </div>
 
-                {/* Right Bento: Fee Structure - High Trust Visualization */}
-                <div className="col-span-1 bg-primary text-white rounded-2xl p-4 flex flex-col justify-between">
-                    <div>
-                        <p className="text-[10px] font-bold text-blue-200 uppercase tracking-widest mb-3 flex items-center gap-1">
-                            <DollarSign size={10} /> Fee Structure
-                        </p>
-                        <div className="space-y-2">
-                            <div className="flex justify-between items-end border-b border-white/10 pb-1">
-                                <span className="text-[10px] text-blue-200 lowercase">Tuition</span>
-                                <span className="text-sm font-bold tracking-tight">
-                                    {university.fees.tuition?.includes('₹') || university.fees.tuition?.includes('$')
-                                        ? university.fees.tuition.split(' ')[0]
-                                        : (university.fees.tuition?.split(' ')[0] || 'Check')}
-                                </span>
-                            </div>
-                            <div className="flex justify-between items-end">
-                                <span className="text-[10px] text-blue-200 lowercase">Hostel</span>
-                                <span className="text-[10px] font-medium opacity-80">
-                                    {university.fees.hostel
-                                        ? (university.fees.hostel.includes('Included') ? 'Free' : university.fees.hostel)
-                                        : (university.fees.hostel_mess ? 'Inc. Mess' : 'Check Details')}
-                                </span>
-                            </div>
-
+                {/* Right Bento: Contact CTA */}
+                <div className="col-span-1 bg-primary text-white rounded-2xl p-4 flex flex-col justify-center items-center text-center relative overflow-hidden group/cta">
+                    <div className="absolute inset-0 bg-accent/10 translate-y-full group-hover/cta:translate-y-0 transition-transform duration-300 ease-out" />
+                    <div className="relative z-10 w-full flex flex-col items-center gap-3">
+                        <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+                            <MessageCircle size={16} className="text-accent" />
                         </div>
-                    </div>
-                    <div className="mt-auto pt-4">
-                        <div className="bg-white/10 rounded-xl p-2 border border-white/5">
-                            <p className="text-[9px] text-blue-100 opacity-70 mb-0.5">Medium of Instruction</p>
-                            <p className="text-xs font-bold flex items-center gap-1">
-                                <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                                {university.medium}
-                            </p>
-                        </div>
+                        <p className="text-xs font-bold leading-tight">Get Detailed<br/>Fee Structure</p>
+                        <a
+                            href={`https://wa.me/${CONTACT_INFO.whatsapp.yashpal}?text=${encodeURIComponent(`Hello Yashpal, I want to know the fee structure and more details about ${university.name} in ${university.country}.`)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button className="w-full py-1.5 text-[10px] uppercase tracking-wider font-bold bg-white text-primary rounded hover:bg-accent hover:text-primary-dark transition-colors">
+                                Know More
+                            </button>
+                        </a>
                     </div>
                 </div>
 

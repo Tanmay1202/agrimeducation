@@ -4,7 +4,8 @@ import Button from '../components/common/Button';
 import UniversityCard from '../components/common/UniversityCard';
 import Modal from '../components/common/Modal';
 import UNIVERSITIES_DATA from '../data/universities.json';
-import { Search, Download, Filter, CheckCircle, Globe, GraduationCap, MapPin, Calendar, Clock, BookOpen, FileText, DollarSign } from 'lucide-react';
+import { Search, Download, Filter, CheckCircle, Globe, GraduationCap, MapPin, Calendar, Clock, BookOpen, FileText, DollarSign, MessageCircle } from 'lucide-react';
+import { CONTACT_INFO } from '../constants';
 import { motion } from 'framer-motion';
 
 const Universities = () => {
@@ -167,7 +168,11 @@ const Universities = () => {
                                 {/* Top Banner */}
                                 <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg">
                                     <img
-                                        src={new URL(`../assets/images/universities/${selectedUniversity.id === 'siberian-state-medical-university' ? 'siberian-state-university.jpeg' : selectedUniversity.id + '.webp'}`, import.meta.url).href}
+                                        src={new URL(`../assets/images/universities/${{
+                                            'siberian-state-medical-university': 'siberian-state-university.jpeg',
+                                            'nepal-manipal-medical-college': 'manipal-college-of-medical-sciences.webp',
+                                            'kathmandu-medical-college': 'kathmandu-medical-college-nepal.webp'
+                                        }[selectedUniversity.id] || `${selectedUniversity.id}.webp`}`, import.meta.url).href}
                                         alt={selectedUniversity.name}
                                         className="w-full h-full object-cover"
                                         onError={(e) => {
@@ -243,26 +248,32 @@ const Universities = () => {
                                         </div>
                                     </div>
 
-                                    {/* Right Content: Fee Table */}
+                                    {/* Right Content: Contact CTA */}
                                     <div className="lg:col-span-1">
-                                        <div className="bg-primary text-white p-8 rounded-3xl shadow-xl sticky top-8">
-                                            <h4 className="text-xl font-serif font-bold mb-6 flex items-center gap-2">
-                                                <DollarSign className="text-accent" /> Fee Structure
+                                        <div className="bg-primary text-white p-8 rounded-3xl shadow-xl sticky top-8 flex flex-col items-center text-center">
+                                            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6">
+                                                <MessageCircle className="text-accent w-8 h-8" />
+                                            </div>
+                                            <h4 className="text-2xl font-serif font-bold mb-4">
+                                                Want to know the Fee Structure?
                                             </h4>
-                                            <div className="space-y-4">
-                                                {Object.entries(selectedUniversity.fees).map(([key, value], i) => (
-                                                    <div key={i} className="flex justify-between items-center py-3 border-b border-white/10 last:border-0">
-                                                        <span className="text-sm text-blue-200 capitalize">{key.replace('_', ' ')}</span>
-                                                        <span className="text-sm font-bold text-right">{value}</span>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                            <div className="mt-8">
-                                                <Button variant="secondary" className="w-full">Apply Now</Button>
-                                                <p className="text-[10px] text-center mt-4 text-blue-200 opacity-60">
-                                                    *Calculated as per current market value of USD/INR.
-                                                </p>
-                                            </div>
+                                            <p className="text-sm text-blue-200 mb-8 leading-relaxed">
+                                                Get the detailed fee breakdown, brochure, and admission process for {selectedUniversity.name}.
+                                            </p>
+                                            <a
+                                                href={`https://wa.me/${CONTACT_INFO.whatsapp.yashpal}?text=${encodeURIComponent(`Hello Yashpal, I want to know the fee structure and more details about ${selectedUniversity.name} in ${selectedUniversity.country}.`)}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="w-full"
+                                            >
+                                                <Button variant="secondary" className="w-full shadow-xl hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                                                    <MessageCircle size={18} />
+                                                    Know More
+                                                </Button>
+                                            </a>
+                                            <p className="text-[10px] text-center mt-4 text-blue-200 opacity-60">
+                                                Connect with our expert counselors directly.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
