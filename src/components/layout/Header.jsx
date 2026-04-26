@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, ChevronDown, Facebook, Instagram, Linkedin, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../common/Button';
+import logo from '../../assets/images/logo.png';
 import { NAV_LINKS, CONTACT_INFO } from '../../constants';
 import { cn } from '../../utils/cn';
 
@@ -28,53 +29,15 @@ const Header = () => {
             "fixed w-full z-50 transition-all duration-300",
             isScrolled ? "bg-white shadow-lg py-2" : "bg-white/95 backdrop-blur-sm py-4"
         )}>
-            {/* Top Bar */}
-            <div className="hidden lg:block border-b border-gray-100 pb-2 mb-2">
-                <div className="container-custom flex justify-between items-center text-sm text-gray-600">
-                    <div className="flex items-center gap-6">
-                        <div className="flex items-center gap-4">
-                            <a href={`tel:${CONTACT_INFO.phone.yashpalValue}`} className="flex items-center gap-2 hover:text-primary transition-colors" aria-label="Call Yashpal">
-                                <Phone size={16} />
-                                <span>{CONTACT_INFO.phone.yashpalDisplay} (Yashpal)</span>
-                            </a>
-                            <a href={`tel:${CONTACT_INFO.phone.kamalValue}`} className="flex items-center gap-2 hover:text-primary transition-colors" aria-label="Call Kamal">
-                                <Phone size={16} />
-                                <span>{CONTACT_INFO.phone.kamalDisplay} (Kamal)</span>
-                            </a>
-                        </div>
-                        <span className="hidden xl:flex items-center gap-2">
-                            <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">100% Admission Assistance</span>
-                        </span>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <div className="flex gap-3">
-                            <a href="#" className="hover:text-primary"><Facebook size={16} /></a>
-                            <a href="#" className="hover:text-primary"><Instagram size={16} /></a>
-                            <a href="#" className="hover:text-primary"><Linkedin size={16} /></a>
-                        </div>
-                        <div className="flex items-center gap-4">
-                            <a href={`https://wa.me/${CONTACT_INFO.whatsapp.yashpal}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-green-600 font-medium hover:underline" aria-label="WhatsApp Yashpal">
-                                <MessageCircle size={16} />
-                                Yashpal
-                            </a>
-                            <a href={`https://wa.me/${CONTACT_INFO.whatsapp.kamal}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-green-600 font-medium hover:underline" aria-label="WhatsApp Kamal">
-                                <MessageCircle size={16} />
-                                Kamal
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <div className="container-custom flex justify-between items-center">
                 {/* Logo */}
-                <Link to="/" className="flex items-center gap-2 z-50">
-                    <div className="bg-primary text-white p-2 rounded-lg">
-                        <span className="font-serif font-bold text-2xl">A</span>
-                    </div>
+                <Link to="/" className="flex items-center gap-3 z-50">
+                    <img src={logo} alt="Agrim Education Logo" className="h-12 w-auto object-contain" />
                     <div className="flex flex-col">
-                        <span className="font-serif font-bold text-xl text-primary leading-none">Agrim</span>
-                        <span className="text-xs tracking-wider text-gray-500 uppercase">Education</span>
+                        <span className="font-serif font-bold text-xl text-primary leading-none tracking-tight">Agrim</span>
+                        <span className="text-[10px] tracking-[0.2em] text-gray-500 uppercase font-medium">Education</span>
                     </div>
                 </Link>
 
@@ -168,18 +131,7 @@ const Header = () => {
                                 }}>
                                     Book Free Counselling
                                 </Button>
-                                <div className="flex flex-col gap-2">
-                                    <a href={`tel:${CONTACT_INFO.phone.yashpalValue}`} className="w-full">
-                                        <Button variant="outline" className="w-full" icon={<Phone size={18} />}>
-                                            Call Yashpal
-                                        </Button>
-                                    </a>
-                                    <a href={`tel:${CONTACT_INFO.phone.kamalValue}`} className="w-full">
-                                        <Button variant="outline" className="w-full" icon={<Phone size={18} />}>
-                                            Call Kamal
-                                        </Button>
-                                    </a>
-                                </div>
+
                             </div>
                         </nav>
                     </motion.div>
