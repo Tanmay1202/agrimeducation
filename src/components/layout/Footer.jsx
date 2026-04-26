@@ -68,11 +68,16 @@ const Footer = () => {
                                 <MapPin className="text-accent mt-1 flex-shrink-0" size={20} />
                                 <span className="text-gray-400">{CONTACT_INFO.address}</span>
                             </li>
-                            <li className="flex items-center gap-4">
-                                <Phone className="text-accent flex-shrink-0" size={20} />
-                                <a href={`tel:${CONTACT_INFO.phone.value}`} className="text-gray-400 hover:text-white transition-colors">
-                                    {CONTACT_INFO.phone.display}
-                                </a>
+                            <li className="flex items-start gap-4">
+                                <Phone className="text-accent mt-1 flex-shrink-0" size={20} />
+                                <div className="flex flex-col gap-1">
+                                    <a href={`tel:${CONTACT_INFO.phone.yashpalValue}`} className="text-gray-400 hover:text-white transition-colors" aria-label={`Call Yashpal at ${CONTACT_INFO.phone.yashpalDisplay}`}>
+                                        {CONTACT_INFO.phone.yashpalDisplay} (Yashpal)
+                                    </a>
+                                    <a href={`tel:${CONTACT_INFO.phone.kamalValue}`} className="text-gray-400 hover:text-white transition-colors" aria-label={`Call Kamal at ${CONTACT_INFO.phone.kamalDisplay}`}>
+                                        {CONTACT_INFO.phone.kamalDisplay} (Kamal)
+                                    </a>
+                                </div>
                             </li>
                             <li className="flex items-center gap-4">
                                 <Mail className="text-accent flex-shrink-0" size={20} />
@@ -81,9 +86,12 @@ const Footer = () => {
                                 </a>
                             </li>
                         </ul>
-                        <div className="mt-6">
-                            <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} target="_blank" rel="noopener noreferrer">
-                                <Button variant="secondary" size="sm" className="w-full">Chat on WhatsApp</Button>
+                        <div className="mt-6 flex flex-col gap-3">
+                            <a href={`https://wa.me/${CONTACT_INFO.whatsapp.yashpal}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Yashpal">
+                                <Button variant="secondary" size="sm" className="w-full">WhatsApp Yashpal</Button>
+                            </a>
+                            <a href={`https://wa.me/${CONTACT_INFO.whatsapp.kamal}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Kamal">
+                                <Button variant="secondary" size="sm" className="w-full">WhatsApp Kamal</Button>
                             </a>
                         </div>
                     </div>

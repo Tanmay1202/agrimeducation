@@ -86,11 +86,18 @@ const Home = () => {
                                     <Button variant="secondary" size="lg" onClick={() => document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth' })}>
                                         Book Free Counselling
                                     </Button>
-                                    <a href={`tel:${CONTACT_INFO.phone.value}`}>
-                                        <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto">
-                                            Call Only: {CONTACT_INFO.phone.display}
-                                        </Button>
-                                    </a>
+                                    <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+                                        <a href={`tel:${CONTACT_INFO.phone.yashpalValue}`} className="w-full sm:w-auto">
+                                            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary w-full">
+                                                Call Yashpal
+                                            </Button>
+                                        </a>
+                                        <a href={`tel:${CONTACT_INFO.phone.kamalValue}`} className="w-full sm:w-auto">
+                                            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary w-full">
+                                                Call Kamal
+                                            </Button>
+                                        </a>
+                                    </div>
                                 </div>
 
                                 <div className="mt-12 flex items-center justify-center lg:justify-start gap-8 text-sm font-medium text-gray-300">
@@ -278,9 +285,14 @@ const Home = () => {
                         <Button variant="primary" size="lg" className="bg-primary-dark text-white hover:bg-white hover:text-primary-dark" onClick={() => document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth' })}>
                             Get Free Counselling
                         </Button>
-                        <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} target="_blank" rel="noopener noreferrer">
-                            <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white hover:text-accent"> WhatsApp Now</Button>
-                        </a>
+                        <div className="flex flex-col sm:flex-row gap-2">
+                            <a href={`https://wa.me/${CONTACT_INFO.whatsapp.yashpal}`} target="_blank" rel="noopener noreferrer">
+                                <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white hover:text-accent"> WhatsApp Yashpal</Button>
+                            </a>
+                            <a href={`https://wa.me/${CONTACT_INFO.whatsapp.kamal}`} target="_blank" rel="noopener noreferrer">
+                                <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white hover:text-accent"> WhatsApp Kamal</Button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>

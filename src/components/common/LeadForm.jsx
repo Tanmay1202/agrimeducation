@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 
 import Button from './Button';
 import { Send, CheckCircle } from 'lucide-react';
+import { CONTACT_INFO } from '../../constants';
 
 const LeadForm = ({ className, title = "Book Free Counselling" }) => {
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitTarget, setSubmitTarget] = useState('yashpal');
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     // Using simple state to avoid dependency issues if react-hook-form isn't installed
@@ -23,21 +25,13 @@ const LeadForm = ({ className, title = "Book Free Counselling" }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setIsSubmitting(true);
+        setIsSubmitting(submitTarget);
 
-        // Simulate API call to webhook
         try {
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            console.log("Form Submitted:", formData);
-            // In production: await fetch(WEBHOOK_URL, { method: 'POST', body: JSON.stringify(formData) })
+            const message = `*New Lead from Agrim Education*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*City:* ${formData.city}%0A*NEET Status:* ${formData.neetScore}%0A*Message:* ${formData.message || 'N/A'}`;
+            const targetNumber = submitTarget === 'yashpal' ? CONTACT_INFO.whatsapp.yashpal : CONTACT_INFO.whatsapp.kamal;
+            window.open(`https://wa.me/${targetNumber}?text=${message}`, '_blank');
             setIsSubmitted(true);
-
-            // Reset after success message shown
-            // setTimeout(() => {
-            //   setIsSubmitted(false);
-            //   setFormData({ name: '', phone: '', city: '', neetScore: '', message: '' });
-            // }, 5000);
-
         } catch (error) {
             console.error("Submission failed", error);
         } finally {
@@ -144,9 +138,14 @@ const LeadForm = ({ className, title = "Book Free Counselling" }) => {
                         <label htmlFor="consent" className="text-xs text-gray-500">I agree to receive updates on WhatsApp/Call.</label>
                     </div>
 
-                    <Button type="submit" variant="primary" className="w-full" isLoading={isSubmitting} icon={<Send size={18} />}>
-                        Get Free Counselling
-                    </Button>
+                    <div className="grid grid-cols-2 gap-2">
+                        <Button type="submit" onClick={() => setSubmitTarget('yashpal')} variant="primary" className="w-full text-sm sm:text-base px-2" isLoading={isSubmitting === 'yashpal'} icon={<Send size={16} />}>
+                            Send to Yashpal
+                        </Button>
+                        <Button type="submit" onClick={() => setSubmitTarget('kamal')} variant="primary" className="w-full text-sm sm:text-base px-2" isLoading={isSubmitting === 'kamal'} icon={<Send size={16} />}>
+                            Send to Kamal
+                        </Button>
+                    </div>
                 </div>
             </form>
         </div>

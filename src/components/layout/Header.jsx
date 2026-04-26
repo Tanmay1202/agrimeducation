@@ -32,10 +32,16 @@ const Header = () => {
             <div className="hidden lg:block border-b border-gray-100 pb-2 mb-2">
                 <div className="container-custom flex justify-between items-center text-sm text-gray-600">
                     <div className="flex items-center gap-6">
-                        <a href={`tel:${CONTACT_INFO.phone.value}`} className="flex items-center gap-2 hover:text-primary transition-colors">
-                            <Phone size={16} />
-                            <span>{CONTACT_INFO.phone.display}</span>
-                        </a>
+                        <div className="flex items-center gap-4">
+                            <a href={`tel:${CONTACT_INFO.phone.yashpalValue}`} className="flex items-center gap-2 hover:text-primary transition-colors" aria-label="Call Yashpal">
+                                <Phone size={16} />
+                                <span>{CONTACT_INFO.phone.yashpalDisplay} (Yashpal)</span>
+                            </a>
+                            <a href={`tel:${CONTACT_INFO.phone.kamalValue}`} className="flex items-center gap-2 hover:text-primary transition-colors" aria-label="Call Kamal">
+                                <Phone size={16} />
+                                <span>{CONTACT_INFO.phone.kamalDisplay} (Kamal)</span>
+                            </a>
+                        </div>
                         <span className="hidden xl:flex items-center gap-2">
                             <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">100% Admission Assistance</span>
                         </span>
@@ -46,10 +52,16 @@ const Header = () => {
                             <a href="#" className="hover:text-primary"><Instagram size={16} /></a>
                             <a href="#" className="hover:text-primary"><Linkedin size={16} /></a>
                         </div>
-                        <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-green-600 font-medium hover:underline">
-                            <MessageCircle size={16} />
-                            WhatsApp Us
-                        </a>
+                        <div className="flex items-center gap-4">
+                            <a href={`https://wa.me/${CONTACT_INFO.whatsapp.yashpal}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-green-600 font-medium hover:underline" aria-label="WhatsApp Yashpal">
+                                <MessageCircle size={16} />
+                                Yashpal
+                            </a>
+                            <a href={`https://wa.me/${CONTACT_INFO.whatsapp.kamal}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-green-600 font-medium hover:underline" aria-label="WhatsApp Kamal">
+                                <MessageCircle size={16} />
+                                Kamal
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,11 +168,18 @@ const Header = () => {
                                 }}>
                                     Book Free Counselling
                                 </Button>
-                                <a href={`tel:${CONTACT_INFO.phone.value}`} className="w-full">
-                                    <Button variant="outline" className="w-full" icon={<Phone size={18} />}>
-                                        Call Now
-                                    </Button>
-                                </a>
+                                <div className="flex flex-col gap-2">
+                                    <a href={`tel:${CONTACT_INFO.phone.yashpalValue}`} className="w-full">
+                                        <Button variant="outline" className="w-full" icon={<Phone size={18} />}>
+                                            Call Yashpal
+                                        </Button>
+                                    </a>
+                                    <a href={`tel:${CONTACT_INFO.phone.kamalValue}`} className="w-full">
+                                        <Button variant="outline" className="w-full" icon={<Phone size={18} />}>
+                                            Call Kamal
+                                        </Button>
+                                    </a>
+                                </div>
                             </div>
                         </nav>
                     </motion.div>

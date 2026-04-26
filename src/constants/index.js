@@ -2,13 +2,17 @@ import { MapPin, Phone, Mail, Clock, ShieldCheck, GraduationCap, Globe, Users, B
 
 export const CONTACT_INFO = {
     phone: {
-        display: "+91-9999177149",
-        value: "919999177149",
-        secondary: "+91-9818757325"
+        yashpalDisplay: "+91-9818599149",
+        yashpalValue: "919818599149",
+        kamalDisplay: "+91-9217017325",
+        kamalValue: "919217017325"
     },
     email: "info@agrimeducation.com",
     address: "Sector 15 Market, Faridabad, Haryana, India",
-    whatsapp: "919999177149",
+    whatsapp: {
+        yashpal: "919818599149",
+        kamal: "919217017325"
+    },
     mapLink: "https://maps.google.com/?q=Agrim+Education+Sector+15+Faridabad"
 };
 

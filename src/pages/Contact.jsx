@@ -47,8 +47,8 @@ const Contact = () => {
                                     <Phone size={24} />
                                 </div>
                                 <h3 className="font-bold text-gray-900 mb-2">Phone numbers</h3>
-                                <p className="text-gray-600 text-sm mb-1">{CONTACT_INFO.phone.display}</p>
-                                <p className="text-gray-600 text-sm">{CONTACT_INFO.phone.secondary}</p>
+                                <p className="text-gray-600 text-sm mb-1">Yashpal: {CONTACT_INFO.phone.yashpalDisplay}</p>
+                                <p className="text-gray-600 text-sm">Kamal: {CONTACT_INFO.phone.kamalDisplay}</p>
                             </div>
 
                             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
