@@ -258,6 +258,41 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Campus Tours */}
+            <section className="section-padding bg-white">
+                <div className="container-custom">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Experience Campus Life</h2>
+                        <p className="text-lg text-gray-600">Take a virtual tour of our top partner universities and see the world-class facilities awaiting you.</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {[
+                            { title: 'Altai State Medical University', desc: 'Hostel & Campus Overview', vimeoId: '76979871' },
+                            { title: 'Tashkent Medical Academy', desc: 'Clinical Labs Tour', vimeoId: '76979871' },
+                            { title: 'Ural State Medical University', desc: 'Library & Student Life', vimeoId: '76979871' },
+                        ].map((tour, idx) => (
+                            <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                                <div className="relative pt-[56.25%] bg-gray-100">
+                                    <iframe 
+                                        src={`https://player.vimeo.com/video/${tour.vimeoId}?title=0&byline=0&portrait=0`} 
+                                        className="absolute top-0 left-0 w-full h-full"
+                                        frameBorder="0" 
+                                        allow="autoplay; fullscreen; picture-in-picture" 
+                                        allowFullScreen
+                                        title={tour.title}
+                                    ></iframe>
+                                </div>
+                                <div className="p-6">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2">{tour.title}</h3>
+                                    <p className="text-gray-600">{tour.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
 
 
             {/* City Links for SEO */}
