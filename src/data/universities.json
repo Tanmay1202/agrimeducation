@@ -1,5 +1,172 @@
 [
     {
+        "id": "lumbini-medical-college",
+        "name": "Lumbini Medical College",
+        "location": "Palpa",
+        "country": "Nepal",
+        "established": 2005,
+        "courses": [
+            "MBBS",
+            "BDS"
+        ],
+        "duration": "5.5 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "₹ 45,00,000 (Approx Total)",
+            "hostel": "Available"
+        },
+        "image": "https://images.unsplash.com/photo-1541829070764-84a7d30dee9d?q=80&w=800",
+        "highlights": [
+            "Affiliated to Kathmandu University",
+            "NMC & WHO recognized",
+            "Similar climate to India",
+            "High FMGE passing rate"
+        ]
+    },
+    {
+        "id": "nepal-manipal-medical-college",
+        "name": "Manipal College of Medical Sciences",
+        "location": "Pokhara",
+        "country": "Nepal",
+        "established": 1994,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "5.5 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "₹ 50,00,000 (Approx Total)",
+            "hostel": "Available"
+        },
+        "image": "https://images.unsplash.com/photo-1519452635265-7b1fbfd865c3?q=80&w=800",
+        "highlights": [
+            "First private medical college in Nepal",
+            "Manipal Group infrastructure",
+            "NMC & WHO recognized",
+            "World-class faculty"
+        ]
+    },
+    {
+        "id": "devdaha-medical-college",
+        "name": "Devdaha Medical College",
+        "location": "Rupandehi",
+        "country": "Nepal",
+        "established": 2008,
+        "courses": [
+            "MBBS"
+        ],
+        "duration": "5.5 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "₹ 42,00,000 (Approx Total)",
+            "hostel": "Available"
+        },
+        "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800",
+        "highlights": [
+            "Affiliated to Kathmandu University",
+            "Growing infrastructure",
+            "NMC recognized",
+            "Accessible from UP border"
+        ]
+    },
+    {
+        "id": "kist-medical-college",
+        "name": "KIST Medical College",
+        "location": "Lalitpur",
+        "country": "Nepal",
+        "established": 2006,
+        "courses": [
+            "MBBS",
+            "BDS"
+        ],
+        "duration": "5.5 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "₹ 48,00,000 (Approx Total)",
+            "hostel": "Available"
+        },
+        "image": "https://images.unsplash.com/photo-1525921429573-056ba4706917?q=80&w=800",
+        "highlights": [
+            "Affiliated to Institute of Medicine (IOM)",
+            "Modern hospital facilities",
+            "NMC & WHO recognized",
+            "Located in Kathmandu Valley"
+        ]
+    },
+    {
+        "id": "chitwan-medical-college",
+        "name": "Chitwan Medical College",
+        "location": "Bharatpur",
+        "country": "Nepal",
+        "established": 2006,
+        "courses": [
+            "MBBS",
+            "BDS",
+            "BSc Nursing"
+        ],
+        "duration": "5.5 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "₹ 45,00,000 (Approx Total)",
+            "hostel": "Available"
+        },
+        "image": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?q=80&w=800",
+        "highlights": [
+            "Affiliated to Tribhuvan University",
+            "Large teaching hospital",
+            "NMC & WHO recognized",
+            "Excellent clinical exposure"
+        ]
+    },
+    {
+        "id": "nobel-medical-college",
+        "name": "Nobel Medical College",
+        "location": "Biratnagar",
+        "country": "Nepal",
+        "established": 2004,
+        "courses": [
+            "MBBS",
+            "BDS"
+        ],
+        "duration": "5.5 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "₹ 46,00,000 (Approx Total)",
+            "hostel": "Available"
+        },
+        "image": "https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?q=80&w=800",
+        "highlights": [
+            "Affiliated to Kathmandu University",
+            "One of the largest in Eastern Nepal",
+            "NMC & WHO recognized",
+            "High FMGE success"
+        ]
+    },
+    {
+        "id": "kathmandu-medical-college",
+        "name": "Kathmandu Medical College",
+        "location": "Kathmandu",
+        "country": "Nepal",
+        "established": 1997,
+        "courses": [
+            "MBBS",
+            "BDS"
+        ],
+        "duration": "5.5 Years",
+        "medium": "English",
+        "fees": {
+            "tuition": "₹ 55,00,000 (Approx Total)",
+            "hostel": "Available"
+        },
+        "image": "https://images.unsplash.com/photo-1576091160550-217359f42af1?q=80&w=800",
+        "highlights": [
+            "Affiliated to Kathmandu University",
+            "Located in the capital",
+            "NMC & WHO recognized",
+            "Premium medical education"
+        ]
+    },
+    {
         "id": "perm-state-medical-university",
         "name": "Perm State Medical University",
         "location": "Perm City",
