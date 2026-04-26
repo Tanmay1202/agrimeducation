@@ -6,7 +6,6 @@ import { CONTACT_INFO } from '../../constants';
 
 const LeadForm = ({ className, title = "Book Free Counselling" }) => {
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitTarget, setSubmitTarget] = useState('yashpal');
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     // Using simple state to avoid dependency issues if react-hook-form isn't installed
@@ -25,11 +24,11 @@ const LeadForm = ({ className, title = "Book Free Counselling" }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setIsSubmitting(submitTarget);
+        setIsSubmitting(true);
 
         try {
             const message = `*New Lead from Agrim Education*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*City:* ${formData.city}%0A*NEET Status:* ${formData.neetScore}%0A*Message:* ${formData.message || 'N/A'}`;
-            const targetNumber = submitTarget === 'yashpal' ? CONTACT_INFO.whatsapp.yashpal : CONTACT_INFO.whatsapp.kamal;
+            const targetNumber = CONTACT_INFO.whatsapp.yashpal;
             window.open(`https://wa.me/${targetNumber}?text=${message}`, '_blank');
             setIsSubmitted(true);
         } catch (error) {
@@ -138,14 +137,9 @@ const LeadForm = ({ className, title = "Book Free Counselling" }) => {
                         <label htmlFor="consent" className="text-xs text-gray-500">I agree to receive updates on WhatsApp/Call.</label>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2">
-                        <Button type="submit" onClick={() => setSubmitTarget('yashpal')} variant="primary" className="w-full text-sm sm:text-base px-2" isLoading={isSubmitting === 'yashpal'} icon={<Send size={16} />}>
-                            Send to Yashpal
-                        </Button>
-                        <Button type="submit" onClick={() => setSubmitTarget('kamal')} variant="primary" className="w-full text-sm sm:text-base px-2" isLoading={isSubmitting === 'kamal'} icon={<Send size={16} />}>
-                            Send to Kamal
-                        </Button>
-                    </div>
+                    <Button type="submit" variant="primary" className="w-full" isLoading={isSubmitting} icon={<Send size={18} />}>
+                        Get Free Counselling
+                    </Button>
                 </div>
             </form>
         </div>
